@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 31px;
+    padding: 30px;
     min-height: 100vh;
     text-align: center;
   }
@@ -21,28 +21,29 @@
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 40px;
-    max-width: 900px;
+    max-width: 850px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 20px;
     color: #fff;
   }
 
   h2 {
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 1.8em;
+    font-weight: 700;
     margin-top: 25px;
     color: #fbd38d;
   }
 
-  p, ul, li {
-    line-height: 1.6;
+  p {
+    line-height: 1.7;
     margin-bottom: 15px;
-    font-size: 1.2em;
+    font-size: 1.3em; /* slightly bigger */
+    font-weight: 500; /* slightly bolder */
   }
 
   ul {
@@ -55,21 +56,29 @@
 
   li {
     margin-bottom: 12px;
+    font-size: 1.2em;
   }
 
-  .message {
-    display: none;
-    color: #1e3a8a; /* dark blue */
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 15px;
+  .buttons {
+    margin-top: 30px;
   }
 
-  .sweet-note {
-    color: #1e3a8a;
-    font-size: 1.5em;
+  .buttons button {
+    background: #f6ad55;
+    color: #1a202c;
     font-weight: bold;
-    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1em;
+  }
+
+  .buttons button:hover {
+    background: #ed8936;
+    transform: scale(1.1);
   }
 
   footer {
@@ -77,14 +86,6 @@
     font-size: 1.2em;
     font-style: italic;
     color: #bee3f8;
-  }
-
-  .click-area {
-    display: inline-block;
-    cursor: pointer;
-    color: #f6ad55;
-    font-weight: bold;
-    margin-top: 15px;
   }
 </style>
 </head>
@@ -96,40 +97,12 @@
 
     <p>You have taught me many valuable lessons — how to stay humble (something I am still learning from you), how to be happy with what we have, and how to only compete with ourselves — to become better, not to envy others.</p>
 
+    <p>You have been a very successful family man, giving us good values and a happy life. Even with some ups and downs, you showed that if a small family is happy together, that’s all that really matters — though everyone else is always welcome too.</p>
+
     <h2>Things We’ve Learnt from You</h2>
     <ul>
       <li><b>Discipline:</b> You always keep your habits — taking a morning shower, praying, or doing <i>Suryanamaskar</i> before eating. The time may change, but you never miss it.</li>
       <li><b>Confidence:</b> You always believe in yourself. Even now, your famous line makes us smile — “Don’t worry, I will manage.”</li>
       <li><b>Interest & Passion:</b> You’ve shown us that when you love something, follow it — whether it’s cricket, politics, or anything else. We love how you still watch the same highlights again and again, saying, “Yaar yeh kahan dekha hai pata nahin, chalo dekhte hain.”</li>
       <li><b>Contentment:</b> You’ve taught us that it’s good to dream and improve, but never be jealous of others.</li>
-      <li><b>Forgiveness:</b> You have a big heart and always choose to forgive and move on, even when something hurtful is said. You stay the same kind and calm person — that’s special.</li>
-      <li><b>Kindness:</b> It’s amazing how you remember and pray for so many people. It shows your kind and good heart.</li>
-    </ul>
-
-    <p>And of course, we can’t forget your love for food! You’ve always shown how to enjoy a meal like a king and serve others with care. And yes — your little dessert tricks are the best:  
-    <span class="sweet-note">“No no, I’ve only had one... okay maybe one last time!” 😄 (Teaching us negotiation skills to always get more and desire more!)</span></p>
-
-    <div class="click-area" onclick="showMessage('Falafelllll! 😄')">Click here for a funny message</div>
-    <div id="funMessage" class="message"></div>
-
-    <script>
-      function showMessage(msg) {
-        const messageDiv = document.getElementById('funMessage');
-        const messages = [
-          "Falafelllll! 😄",
-          "Bhulllaaa! 😂",
-          "Chintaa Matttt Karrr! 💪",
-          "Koi Nahin, Sab Thik Hai! 🙏",
-          "Cricket Time! 🏏"
-        ];
-        // pick a random funny message
-        const randomMsg = messages[Math.floor(Math.random() * messages.length)];
-        messageDiv.textContent = randomMsg;
-        messageDiv.style.display = 'block';
-      }
-    </script>
-
-    <footer><b>Happy Birthday, Dad! ❤️</b></footer>
-  </div>
-</body>
-</html>
+      <li><b>Forgiveness:</b> You have a big heart and always choose to forgive and move on, even when something hurtful is said. You stay the same kind
